@@ -11,7 +11,7 @@
         </ResourceDictionary>
     </Window.Resources>   
     <Grid>
-        <Controls:KButton Width="40" Height="30" Click="KButton_Click">            
+        <Controls:KButton Width="40" Height="30" Click="KButton_Click" Content="Click">            
             <Controls:KButton.Style>
                 <Style TargetType="Controls:KButton" BasedOn="{StaticResource myButton}">
                     <Setter Property="BorderThickness" Value="2"/>
