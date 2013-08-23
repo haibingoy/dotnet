@@ -1,6 +1,8 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
@@ -10,31 +12,56 @@ namespace DXGridSample
 {
     public partial class MainWindow : Window
     {
-        /// <summary>
-        /// The persons.
-        /// </summary>
-        private readonly ObservableCollection<Person> Persons;
+        private readonly List<Person> _originalPersons;
+
+        public ObservableCollection<Person> Persons { get; private set; }
 
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = this;
+
+            _originalPersons = new List<Person>();
+
             Persons = new ObservableCollection<Person>();
 
             for (int i = 0; i < 10; i++)
             {
-                Persons.Add(new Person { Id = i, Name = "Name" + i, Bool = i % 2 == 0 });
+                _originalPersons.Add(new Person { Id = i, Name = "Name" + i, Bool = i % 2 == 0 });
 
                 if (i%2 == 0)
                 {
-                    Persons[i].Profession = "IT, Teacher";
+                    _originalPersons[i].Profession = "IT, Teacher";
                 }
                 else
                 {
-                    Persons[i].Profession = "Teacher";
+                    _originalPersons[i].Profession = "Teacher";
                 }
             }
 
-            grid.ItemsSource = Persons;
+            foreach (var originalPerson in _originalPersons)
+            {
+                Persons.Add(originalPerson);
+            }
+        }
+
+        private void Grid_OnStartGrouping(object sender, RoutedEventArgs e)
+        {
+            if (grid.Columns["Profession"].IsGrouped)
+            {
+                Persons.Clear();
+                foreach (var originalPerson in _originalPersons)
+                {
+                    foreach (var item in originalPerson.Profession.Split(','))
+                    {
+                        var person = originalPerson.Copy();
+                        person.Profession = item.Trim();
+                        Persons.Add(person);
+                        Debug.WriteLine(person.Id + " " + person.Profession);
+                    }
+                }
+            }
         }
     }
 
@@ -53,5 +80,10 @@ namespace DXGridSample
         public bool Bool { get; set; }
 
         public string Profession { get; set; }
+
+        public Person Copy()
+        {
+          return new Person() { Id = this.Id, Bool = this.Bool, Name = this.Name, Profession = this.Profession };
+        }
     }
 }

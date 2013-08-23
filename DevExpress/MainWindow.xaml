@@ -1,45 +1,43 @@
-﻿<Window 
-    x:Class="DXGridSample.MainWindow" 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
-    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" 
-    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" 
-    xmlns:dxet="http://schemas.devexpress.com/winfx/2008/xaml/editors/themekeys"
-    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" 
-    xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" 
-	xmlns:local="clr-namespace:DXGridSample" dx:ThemeManager.ThemeName="Office2013"
-    Name="win" 
-    Title="MainWindow" 
-    Height="350" 
-    Width="525">
-	<Grid>
-		<Grid.RowDefinitions>
-			<RowDefinition/>
-			<RowDefinition Height="Auto"/>
-			<RowDefinition Height="Auto"/>
-		</Grid.RowDefinitions>
-		<dxg:GridControl x:Name="grid" AutoPopulateColumns="True">
+﻿<Window x:Class="DXGridSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        Name="win"
+        Title="MainWindow"
+        Width="525"
+        Height="350"
+        dx:ThemeManager.ThemeName="Office2013">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <dxg:GridControl x:Name="grid"
+                         AutoPopulateColumns="True"
+                         ItemsSource="{Binding Persons}"
+                         StartGrouping="Grid_OnStartGrouping">
             <dxg:GridControl.Resources>
                 <ResourceDictionary>
                     <ResourceDictionary.MergedDictionaries>
-                        <ResourceDictionary Source="Dictionary.xaml"/>
+                        <ResourceDictionary Source="Dictionary.xaml" />
                     </ResourceDictionary.MergedDictionaries>
                 </ResourceDictionary>
             </dxg:GridControl.Resources>
             <dxg:GridControl.Columns>
-				<dxg:GridColumn FieldName="Id"/>
-				<dxg:GridColumn FieldName="Name"/>
-				<dxg:GridColumn FieldName="Bool"/>
-                <dxg:GridColumn FieldName="Profession"/>
-			</dxg:GridControl.Columns>
-			<dxg:GridControl.View>
-				<dxg:TableView Name="view" ShowTotalSummary="True">
-				</dxg:TableView>
-			</dxg:GridControl.View>
-			<dxg:GridControl.TotalSummary>
-				<dxg:GridSummaryItem FieldName="Name" SummaryType="Count" />
-				<dxg:GridSummaryItem FieldName="Bool" SummaryType="Count" />
-			</dxg:GridControl.TotalSummary>
-		</dxg:GridControl>
-	</Grid>
+                <dxg:GridColumn FieldName="Id" />
+                <dxg:GridColumn FieldName="Name" />
+                <dxg:GridColumn FieldName="Bool" />
+                <dxg:GridColumn FieldName="Profession" />
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.View>
+                <dxg:TableView Name="view" ShowTotalSummary="True" />
+            </dxg:GridControl.View>
+            <dxg:GridControl.TotalSummary>
+                <dxg:GridSummaryItem FieldName="Name" SummaryType="Count" />
+                <dxg:GridSummaryItem FieldName="Bool" SummaryType="Count" />
+            </dxg:GridControl.TotalSummary>
+        </dxg:GridControl>
+    </Grid>
 </Window>
