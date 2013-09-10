@@ -7,7 +7,7 @@
         Height="350">
     <Grid>
         <WindowsFormsHost x:Name="WindowsFormsHost"
-                          HorizontalAlignment="Center"
-                          VerticalAlignment="Center" />
+                          HorizontalAlignment="Stretch"
+                          VerticalAlignment="Stretch" />
     </Grid>
 </Window>

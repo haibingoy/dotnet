@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsHost", "Windows
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication", "WindowsFormsApplication\WindowsFormsApplication.csproj", "{CDBF0DED-A2B8-4BC6-9E54-F7263E2B2493}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnchorTest", "AnchorTest\AnchorTest.csproj", "{33DB5DE4-030D-4C31-BA18-1FC104E8D4DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{CDBF0DED-A2B8-4BC6-9E54-F7263E2B2493}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDBF0DED-A2B8-4BC6-9E54-F7263E2B2493}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDBF0DED-A2B8-4BC6-9E54-F7263E2B2493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33DB5DE4-030D-4C31-BA18-1FC104E8D4DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33DB5DE4-030D-4C31-BA18-1FC104E8D4DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33DB5DE4-030D-4C31-BA18-1FC104E8D4DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33DB5DE4-030D-4C31-BA18-1FC104E8D4DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

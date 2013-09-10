@@ -40,14 +40,16 @@ namespace WindowsFormsHost
             listBox.Items.Add("item 2");
             listBox.Height = 200;
             listBox.Width = 200;
-            listBox.Location = new System.Drawing.Point(0, 0);
+            listBox.Anchor = Windows.AnchorStyles.Left | Windows.AnchorStyles.Top;
             panel.Controls.Add(listBox);
             var button = new Windows.Button();
             button.Height = 100;
             button.Width = 100;
             button.Text = "Click me.";
-            button.Location = new System.Drawing.Point(200, 0);
+            button.Location = new System.Drawing.Point(250, 200);
+            button.Anchor = Windows.AnchorStyles.Bottom | Windows.AnchorStyles.Right;
             panel.Controls.Add(button);
+            panel.Dock = Windows.DockStyle.Fill;
             WindowsFormsHost.Child = panel;
         }
     }
