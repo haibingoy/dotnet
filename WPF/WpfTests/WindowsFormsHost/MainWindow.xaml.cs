@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,18 +32,23 @@ namespace WindowsFormsHost
 
         void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            var winformButton = new Windows.Button();
-            winformButton.Width = 200;
-            winformButton.Height = 30;
-            winformButton.Text = "OK";
-            winformButton.Click += winformButton_Click;
-            WindowsFormsHost.Child = winformButton;
-        }
-
-        void winformButton_Click(object sender, EventArgs e)
-        {
-            var form = new Form1();
-            form.Show();
+            var panel = new Windows.Panel();
+            panel.Size = new System.Drawing.Size(534, 318);
+            panel.BackColor = System.Drawing.SystemColors.ControlDark;
+            var listBox = new Windows.ListBox();
+            listBox.Items.Add("item 1");
+            listBox.Items.Add("item 2");
+            listBox.Height = 200;
+            listBox.Width = 200;
+            listBox.Location = new System.Drawing.Point(0, 0);
+            panel.Controls.Add(listBox);
+            var button = new Windows.Button();
+            button.Height = 100;
+            button.Width = 100;
+            button.Text = "Click me.";
+            button.Location = new System.Drawing.Point(200, 0);
+            panel.Controls.Add(button);
+            WindowsFormsHost.Child = panel;
         }
     }
 }
