@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -48,9 +49,15 @@ namespace WindowsFormsHost
             button.Text = "Click me.";
             button.Location = new System.Drawing.Point(250, 200);
             button.Anchor = Windows.AnchorStyles.Bottom | Windows.AnchorStyles.Right;
+            button.Click += button_Click;
             panel.Controls.Add(button);
             panel.Dock = Windows.DockStyle.Fill;
             WindowsFormsHost.Child = panel;
+        }
+
+        void button_Click(object sender, EventArgs e)
+        {
+            Debug.WriteLine("Focused Element: " + FocusManager.GetFocusedElement(this));
         }
     }
 }

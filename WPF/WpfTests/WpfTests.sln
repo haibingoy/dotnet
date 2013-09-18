@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnchorTest", "AnchorTest\AnchorTest.csproj", "{33DB5DE4-030D-4C31-BA18-1FC104E8D4DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfResource", "WpfResource\WpfResource.csproj", "{6CD81935-7E8B-4B92-BAAA-6A50FBFD7210}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{33DB5DE4-030D-4C31-BA18-1FC104E8D4DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33DB5DE4-030D-4C31-BA18-1FC104E8D4DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33DB5DE4-030D-4C31-BA18-1FC104E8D4DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD81935-7E8B-4B92-BAAA-6A50FBFD7210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD81935-7E8B-4B92-BAAA-6A50FBFD7210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD81935-7E8B-4B92-BAAA-6A50FBFD7210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD81935-7E8B-4B92-BAAA-6A50FBFD7210}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

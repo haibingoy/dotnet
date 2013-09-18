@@ -6,7 +6,15 @@
         Width="525"
         Height="350">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0"
+                Click="button_Click"
+                Content="Wpf here" />
         <WindowsFormsHost x:Name="WindowsFormsHost"
+                          Grid.Row="1"
                           HorizontalAlignment="Stretch"
                           VerticalAlignment="Stretch" />
     </Grid>
