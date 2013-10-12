@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -29,6 +30,8 @@ namespace WindowsFormsHost
             InitializeComponent();
             Windows.Application.EnableVisualStyles();
             Loaded += MainWindow_Loaded;
+            Grid.ContextMenu = new ContextMenu();
+            Grid.ContextMenu.Items.Add(new MenuItem {Header = "_Test"});
         }
 
         void MainWindow_Loaded(object sender, RoutedEventArgs e)
@@ -58,6 +61,13 @@ namespace WindowsFormsHost
         void button_Click(object sender, EventArgs e)
         {
             Debug.WriteLine("Focused Element: " + FocusManager.GetFocusedElement(this));
+        }
+
+        private void MainWindow_OnContextMenuOpening(object sender, ContextMenuEventArgs e)
+        {
+            FieldInfo mostRecentInputDeviceField = typeof(InputManager).GetMember("_mostRecentInputDevice", MemberTypes.Field, BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static)[0] as FieldInfo;
+
+            mostRecentInputDeviceField.SetValue(InputManager.Current, InputManager.Current.PrimaryKeyboardDevice);
         }
     }
 }

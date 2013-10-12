@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnchorTest", "AnchorTest\An
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfResource", "WpfResource\WpfResource.csproj", "{6CD81935-7E8B-4B92-BAAA-6A50FBFD7210}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusyCursor", "Cursor\BusyCursor.csproj", "{45D53C2B-BA25-4A21-9809-A062C6A7B6E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusyCursorTest", "BusyCursorTest\BusyCursorTest.csproj", "{263B7A9E-6622-4CE6-A07F-7BDEF1B464AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,14 @@ Global
 		{6CD81935-7E8B-4B92-BAAA-6A50FBFD7210}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CD81935-7E8B-4B92-BAAA-6A50FBFD7210}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CD81935-7E8B-4B92-BAAA-6A50FBFD7210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45D53C2B-BA25-4A21-9809-A062C6A7B6E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D53C2B-BA25-4A21-9809-A062C6A7B6E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D53C2B-BA25-4A21-9809-A062C6A7B6E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D53C2B-BA25-4A21-9809-A062C6A7B6E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{263B7A9E-6622-4CE6-A07F-7BDEF1B464AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{263B7A9E-6622-4CE6-A07F-7BDEF1B464AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{263B7A9E-6622-4CE6-A07F-7BDEF1B464AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{263B7A9E-6622-4CE6-A07F-7BDEF1B464AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,8 +4,9 @@
         xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
         Title="MainWindow"
         Width="525"
-        Height="350">
-    <Grid>
+        Height="350"
+        ContextMenuOpening="MainWindow_OnContextMenuOpening">
+    <Grid x:Name="Grid">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />

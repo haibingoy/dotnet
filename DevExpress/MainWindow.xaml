@@ -1,20 +1,21 @@
-﻿<Window x:Class="DXGridSample.MainWindow"
+﻿<ribbon:RibbonWindow x:Class="DXGridSample.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
         xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        xmlns:ribbon="http://schemas.actiprosoftware.com/winfx/xaml/ribbon"
+        xmlns:docking="clr-namespace:ActiproSoftware.Windows.Controls.Docking;assembly=ActiproSoftware.Docking.Wpf"
         Name="win"
         Title="MainWindow"
         Width="525"
-        Height="350"
+        Height="350" ContextMenuOpening="MainWindow_OnContextMenuOpening"
         dx:ThemeManager.ThemeName="Office2013">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <dxg:GridControl x:Name="grid"
+        <dxg:GridControl x:Name="grid" Grid.Row="0"
                          AutoPopulateColumns="True"
                          ItemsSource="{Binding Persons}"
                          StartGrouping="Grid_OnStartGrouping">
@@ -32,12 +33,122 @@
                 <dxg:GridColumn FieldName="Profession" />
             </dxg:GridControl.Columns>
             <dxg:GridControl.View>
-                <dxg:TableView Name="view" ShowTotalSummary="True" />
+                <dxg:TableView Name="view" ShowTotalSummary="True">
+                    <dxg:TableView.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem Header="_Test"></MenuItem>
+                        </ContextMenu>
+                    </dxg:TableView.ContextMenu>
+                </dxg:TableView>
             </dxg:GridControl.View>
             <dxg:GridControl.TotalSummary>
                 <dxg:GridSummaryItem FieldName="Name" SummaryType="Count" />
                 <dxg:GridSummaryItem FieldName="Bool" SummaryType="Count" />
             </dxg:GridControl.TotalSummary>
         </dxg:GridControl>
+
+        <DockPanel Grid.Row="1">
+            <!-- Ribbon Control -->
+            <ribbon:Ribbon x:Name="ribbon" DockPanel.Dock="Top">
+                <!-- 
+				Use pre-defined WordApplicationMenu, WordHomeTab, and WordInsertTab types in the sample project so that we don't have redundant code 
+				in this sample that takes away from the focus of the sample
+			-->
+       
+                <ribbon:Ribbon.QuickAccessToolBarItems>
+                    <ribbon:Button  Label="Save" />
+                    <ribbon:Button  Label="Undo" />
+                    <ribbon:Button  Label="Redo" />
+                </ribbon:Ribbon.QuickAccessToolBarItems>
+                <ribbon:Ribbon.Tabs>
+                    <ribbon:Tab Label="Page Layout" KeyTipAccessText="P" />
+                    <ribbon:Tab Label="References" KeyTipAccessText="S" />
+                    <ribbon:Tab Label="Mailings" KeyTipAccessText="M" />
+                    <ribbon:Tab Label="Review" KeyTipAccessText="R" />
+                    <ribbon:Tab Label="View" KeyTipAccessText="W" />
+                    <ribbon:Tab Label="Themes" KeyTipAccessText="T">
+                        <ribbon:Group Label="Theme Options">
+                            <ribbon:Button  Label="Black Theme" KeyTipAccessText="K"  />
+                        </ribbon:Group>
+                    </ribbon:Tab>
+                </ribbon:Ribbon.Tabs>
+            </ribbon:Ribbon>
+
+            <!-- DockSite -->
+            <docking:DockSite x:Name="dockSite">
+                <docking:DockSite.AutoHideLeftContainers>
+                    <docking:ToolWindowContainer>
+                        <docking:ToolWindow Title="Toolbox"/>
+                    </docking:ToolWindowContainer>
+                </docking:DockSite.AutoHideLeftContainers>
+                <docking:SplitContainer>
+
+                    <!-- Workspace -->
+                    <docking:Workspace>
+                        <docking:TabbedMdiHost x:Name="tabbedMdiHost">
+                            <docking:TabbedMdiContainer>
+                                <docking:DocumentWindow Title="WelcomeDocument.rtf" Description="Rich-text document" 
+													FileName="C:\Users\Actipro\My Documents\WelcomeDocument.rtf"
+													IsReadOnly="True">
+                                    <RichTextBox IsReadOnly="True" BorderThickness="0">
+                                        <RichTextBox.Document>
+                                            <FlowDocument>
+                                                <Paragraph>
+                                                    <Span FontSize="22" FontWeight="Bold">RibbonWindow with Docking Demo</Span>
+                                                    <LineBreak />
+                                                    <LineBreak />
+                                                    Use our
+                                                    <Bold>Actipro Docking &amp; MDI</Bold> product and our
+                                                    <Bold>Actipro Ribbon</Bold> product
+												together to create Office-like applications that have both a ribbon user interface and docking capabilities.
+                                                </Paragraph>
+
+                                                <Paragraph>
+                                                    Office Themes
+                                                </Paragraph>
+                                                <Paragraph>
+                                                    Change the current Office theme by changing to the
+                                                    <Bold>Themes</Bold>
+                                                    tab in the Ribbon and selecting an alternate Office theme.
+                                                </Paragraph>
+                                            </FlowDocument>
+                                        </RichTextBox.Document>
+                                    </RichTextBox>
+                                </docking:DocumentWindow>
+                                <docking:DocumentWindow Title="Document2.rtf" Description="Rich-text document"
+													FileName="C:\Users\Actipro\My Documents\Document2.rtf"
+													IsReadOnly="True">
+                                    <RichTextBox IsReadOnly="True" BorderThickness="0">
+                                        <RichTextBox.Document>
+                                            <FlowDocument>
+                                                <Paragraph>
+                                                    This document is read-only.
+                                                </Paragraph>
+                                            </FlowDocument>
+                                        </RichTextBox.Document>
+                                    </RichTextBox>
+                                </docking:DocumentWindow>
+                            </docking:TabbedMdiContainer>
+                        </docking:TabbedMdiHost>
+                    </docking:Workspace>
+
+                    <docking:ToolWindowContainer>
+                        <docking:ToolWindow Title="Document Outline" >
+                            <TreeView BorderThickness="0">
+                                <TreeViewItem Header="Document" IsExpanded="True">
+                                    <TreeViewItem Header="RibbonWindow with Docking Demo" IsExpanded="True">
+                                        <TreeViewItem Header="Office Themes" />
+                                    </TreeViewItem>
+                                </TreeViewItem>
+                            </TreeView>
+                        </docking:ToolWindow>
+                        <docking:ToolWindow Title="Properties" />
+                    </docking:ToolWindowContainer>
+                </docking:SplitContainer>
+            </docking:DockSite>
+
+        </DockPanel>
+        
     </Grid>
-</Window>
+
+</ribbon:RibbonWindow>
