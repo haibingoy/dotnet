@@ -35,5 +35,15 @@ namespace BusyCursor
         {
             Mouse.OverrideCursor = Cursors.Wait;
         }
+
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        {
+            Window window = new Window();
+            window.Title = "Popup window";
+            window.Owner = this;
+            window.Height = 50;
+            window.Width = 90;
+            window.ShowDialog();
+        }
     }
 }

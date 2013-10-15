@@ -7,6 +7,7 @@
     <Grid>
         <Button HorizontalAlignment="Center"
                 VerticalAlignment="Center"
+                Click="ButtonBase_OnClick"
                 Content="Button Arrow Mouse"
                 MouseEnter="UIElement_OnMouseEnter"
                 MouseLeave="UIElement_OnMouseLeave" />
