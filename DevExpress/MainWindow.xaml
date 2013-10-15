@@ -31,6 +31,17 @@
                 <dxg:GridColumn FieldName="Name" />
                 <dxg:GridColumn FieldName="Bool" />
                 <dxg:GridColumn FieldName="Profession" />
+                <dxg:GridColumn FieldName="Head" />
+                <dxg:GridColumn FieldName="Border" />
+                <dxg:GridColumn FieldName="DeviceName" />
+                <dxg:GridColumn FieldName="DeviceVersion" />
+                <dxg:GridColumn FieldName="DtmDate" />
+                <dxg:GridColumn FieldName="DtmName" />
+                <dxg:GridColumn FieldName="DeviceVendor" />
+                <dxg:GridColumn FieldName="DtmVersion" />
+                <dxg:GridColumn FieldName="FdtVersion" />
+                <dxg:GridColumn FieldName="Group" />
+                <dxg:GridColumn FieldName="Protocol" />
             </dxg:GridControl.Columns>
             <dxg:GridControl.View>
                 <dxg:TableView Name="view" ShowTotalSummary="True">

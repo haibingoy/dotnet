@@ -4,12 +4,15 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Globalization;
+using System.Net.Mime;
 using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Markup;
+using System.Windows.Media;
+using Image = System.Drawing.Image;
 
 namespace DXGridSample
 {
@@ -29,9 +32,25 @@ namespace DXGridSample
 
             Persons = new ObservableCollection<Person>();
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 400; i++)
             {
-                _originalPersons.Add(new Person { Id = i, Name = "Name" + i, Bool = i % 2 == 0 });
+                _originalPersons.Add(new Person
+                    {
+                        Id = i, 
+                        Name = "Name" + i, 
+                        Bool = i % 2 == 0,
+                        Head = Image.FromFile("fdtCONTAINER.ico"),
+                        Border = Image.FromFile("fdtCONTAINER.ico"),
+                        DeviceName = "DeviceNameDeviceName",
+                        DeviceVersion = "DeviceNameDeviceName",
+                        DtmDate = "DeviceNameDeviceName",
+                        DtmName = "DeviceNameDeviceName",
+                        DeviceVendor = "DeviceNameDeviceName",
+                        DtmVersion = "DeviceNameDeviceName",
+                        FdtVersion = "DeviceNameDeviceName",
+                        Group = "DeviceNameDeviceName",
+                        Protocol = "DeviceNameDeviceName"
+                    });
 
                 if (i%2 == 0)
                 {
@@ -41,6 +60,7 @@ namespace DXGridSample
                 {
                     _originalPersons[i].Profession = "Teacher";
                 }
+
             }
 
             foreach (var originalPerson in _originalPersons)
@@ -85,11 +105,35 @@ namespace DXGridSample
         /// </summary>
         public int Id { get; set; }
 
+        public Image Head { get; set; }
+
+        public Image Border { get; set; }
+
         public string Name { get; set; }
   
         public bool Bool { get; set; }
 
         public string Profession { get; set; }
+
+        public string DeviceName { get; set; }
+
+        public string DeviceVendor { get; set; }
+
+        public string DeviceVersion { get; set; }
+
+        public string DtmDate { get; set; }
+
+        public string DtmName { get; set; }
+
+        public string DtmVendor { get; set; }
+
+        public string DtmVersion { get; set; }
+
+        public string FdtVersion { get; set; }
+
+        public string Group { get; set; }
+
+        public string Protocol { get; set; }
 
         public Person Copy()
         {
