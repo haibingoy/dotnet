@@ -12,11 +12,12 @@ using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Markup;
 using System.Windows.Media;
+using DevExpress.Data.Browsing;
 using Image = System.Drawing.Image;
 
 namespace DXGridSample
 {
-    public partial class MainWindow
+    public partial class MainWindow : Window
     {
         private readonly List<Person> _originalPersons;
 

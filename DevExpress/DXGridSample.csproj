@@ -36,79 +36,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ActiproSoftware.DataGrid.Contrib.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Actipro\ActiproSoftware.DataGrid.Contrib.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="ActiproSoftware.Docking.Interop.Prism.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Actipro\ActiproSoftware.Docking.Interop.Prism.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="ActiproSoftware.Docking.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Actipro\ActiproSoftware.Docking.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="ActiproSoftware.Editors.Interop.DataGrid.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Actipro\ActiproSoftware.Editors.Interop.DataGrid.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="ActiproSoftware.Editors.Interop.PropertyGrid.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Actipro\ActiproSoftware.Editors.Interop.PropertyGrid.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="ActiproSoftware.Editors.Interop.Ribbon.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Actipro\ActiproSoftware.Editors.Interop.Ribbon.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="ActiproSoftware.Editors.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Actipro\ActiproSoftware.Editors.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="ActiproSoftware.Legacy.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Actipro\ActiproSoftware.Legacy.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="ActiproSoftware.Navigation.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Actipro\ActiproSoftware.Navigation.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="ActiproSoftware.Ribbon.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Actipro\ActiproSoftware.Ribbon.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="ActiproSoftware.Shared.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Actipro\ActiproSoftware.Shared.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="ActiproSoftware.Themes.Metro.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Actipro\ActiproSoftware.Themes.Metro.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="ActiproSoftware.Themes.Office.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Actipro\ActiproSoftware.Themes.Office.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="ActiproSoftware.Wizard.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Actipro\ActiproSoftware.Wizard.Wpf.dll</HintPath>
-    </Reference>
     <Reference Include="DevExpress.Data.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.Xpf.Mvvm.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\DevExpress.Data.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Core.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.Xpf.Printing.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\DevExpress.Xpf.Core.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Grid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\DevExpress.Xpf.Grid.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Grid.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\DevExpress.Xpf.Grid.v13.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Layout.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\DevExpress.Xpf.Layout.v13.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Mvvm.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\DevExpress.Xpf.Mvvm.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2013.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\DevExpress.Xpf.Themes.Office2013.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
