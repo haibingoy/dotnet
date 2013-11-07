@@ -7,25 +7,31 @@
         Width="525"
         Height="350">
     <Grid>
-        <dxn:NavBarControl Name="navBar">
-            <dxn:NavBarControl.View>
-                <dxn:ExplorerBarView  Orientation="Vertical"/>
-            </dxn:NavBarControl.View>
-            <dxn:NavBarControl.Groups>
-                <dxn:NavBarGroup Header="Mail"
-                                 ItemLayoutSettings="{dxn:NavBarLayoutSettings ImageHorizontalAlignment=Center, TextHorizontalAlignment=Center, ImageDocking=Top}">
-                    <dxn:NavBarGroup.Items>
-                        <dxn:NavBarItem>Item1</dxn:NavBarItem>
-                        <dxn:NavBarItem>Item2</dxn:NavBarItem>
-                    </dxn:NavBarGroup.Items>
-                </dxn:NavBarGroup>
-                <dxn:NavBarGroup Header="Calendar" DisplaySource="Content"
-                                 ItemLayoutSettings="{dxn:NavBarLayoutSettings ImageHorizontalAlignment=Center, TextHorizontalAlignment=Center, ImageDocking=Top}">
-                    <dxn:NavBarGroup.Content>
-                        <TextBlock Text="Group content text"></TextBlock>
-                    </dxn:NavBarGroup.Content>
-                </dxn:NavBarGroup>
-            </dxn:NavBarControl.Groups>
-        </dxn:NavBarControl>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <dxn:NavBarControl Name="navBar"
+                               MinWidth="400"
+                               MaxWidth="800">
+                <dxn:NavBarControl.View>
+                    <dxn:ExplorerBarView Orientation="Vertical" />
+                </dxn:NavBarControl.View>
+                <dxn:NavBarControl.Groups>
+                    <dxn:NavBarGroup Header="Mail" ItemLayoutSettings="{dxn:NavBarLayoutSettings ImageHorizontalAlignment=Center, TextHorizontalAlignment=Center, ImageDocking=Top}">
+                        <dxn:NavBarGroup.Items>
+                            <dxn:NavBarItem>Item1</dxn:NavBarItem>
+                            <dxn:NavBarItem>Item2</dxn:NavBarItem>
+                        </dxn:NavBarGroup.Items>
+                    </dxn:NavBarGroup>
+                    <dxn:NavBarGroup DisplaySource="Content"
+                                     Header="Calendar"
+                                     ItemLayoutSettings="{dxn:NavBarLayoutSettings ImageHorizontalAlignment=Center,
+                                                                                   TextHorizontalAlignment=Center,
+                                                                                   ImageDocking=Top}">
+                        <dxn:NavBarGroup.Content>
+                            <TextBlock Text="Group content text" />
+                        </dxn:NavBarGroup.Content>
+                    </dxn:NavBarGroup>
+                </dxn:NavBarControl.Groups>
+            </dxn:NavBarControl>
+        </ScrollViewer>
     </Grid>
 </Window>
