@@ -1,0 +1,46 @@
+﻿<Window x:Class="NavBarControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="clr-namespace:DevExpress.Xpf.Core;assembly=DevExpress.Xpf.Core.v13.1"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:dxn="http://schemas.devexpress.com/winfx/2008/xaml/navbar"
+        Title="MainWindow">
+    <Grid>
+        <dxn:NavBarControl Name="navBar" dx:ThemeManager.ThemeName="MetropolisLight">
+            <dxn:NavBarControl.View>
+                <dxn:ExplorerBarView Orientation="Vertical" />
+            </dxn:NavBarControl.View>
+            <dxn:NavBarControl.Groups>
+                <dxn:NavBarGroup DisplaySource="Content"
+                                 Header="Mail"
+                                 dx:ThemeManager.ThemeName="Office2013">
+                    <dxn:NavBarGroup.Content>
+                        <Button Width="500"
+                                Height="201"
+                                Content="First item." />
+                    </dxn:NavBarGroup.Content>
+                </dxn:NavBarGroup>
+                <dxn:NavBarGroup DisplaySource="Content"
+                                 Header="Calendar"
+                                 dx:ThemeManager.ThemeName="Office2013">
+                    <dxn:NavBarGroup.Content>
+                        <TextBox Width="600"
+                                 Height="200"
+                                 Text="Group content text" />
+                    </dxn:NavBarGroup.Content>
+                </dxn:NavBarGroup>
+
+                <dxn:NavBarGroup DisplaySource="Content"
+                                 Header="Calendar"
+                                 dx:ThemeManager.ThemeName="Office2013">
+                    <dxn:NavBarGroup.Content>
+                        <TextBox Width="600"
+                                 Height="200"
+                                 Text="Group content text" />
+                    </dxn:NavBarGroup.Content>
+                </dxn:NavBarGroup>
+
+            </dxn:NavBarControl.Groups>
+        </dxn:NavBarControl>
+    </Grid>
+</Window>
