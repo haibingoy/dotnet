@@ -3,6 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="clr-namespace:ActiproSoftware.Windows.Controls.Ribbon.Controls;assembly=ActiproSoftware.Ribbon.Wpf"
         xmlns:docking="clr-namespace:ActiproSoftware.Windows.Controls.Docking;assembly=ActiproSoftware.Docking.Wpf"
+        xmlns:dx="clr-namespace:ActiproSoftware.Windows.Themes;assembly=ActiproSoftware.Shared.Wpf"
+        xmlns:dx1="clr-namespace:DevExpress.Xpf.Core;assembly=DevExpress.Xpf.Core.v13.1"
+        xmlns:dxn="clr-namespace:DevExpress.Xpf.NavBar;assembly=DevExpress.Xpf.NavBar.v13.1"
         xmlns:ribbon="clr-namespace:ActiproSoftware.Windows.Controls.Ribbon;assembly=ActiproSoftware.Ribbon.Wpf"
         Title="MainWindow"
         Width="525"
@@ -94,14 +97,43 @@
                     </docking:Workspace>
 
                     <docking:ToolWindowContainer>
-                        <docking:ToolWindow Title="Document Outline">
-                            <TreeView BorderThickness="0">
-                                <TreeViewItem Header="Document" IsExpanded="True">
-                                    <TreeViewItem Header="RibbonWindow with Docking Demo" IsExpanded="True">
-                                        <TreeViewItem Header="Office Themes" />
-                                    </TreeViewItem>
-                                </TreeViewItem>
-                            </TreeView>
+                        <docking:ToolWindow Title="NavBarControl">
+                            <dxn:NavBarControl Name="navBar" dx1:ThemeManager.ThemeName="MetropolisLight">
+                                <dxn:NavBarControl.View>
+                                    <dxn:ExplorerBarView Orientation="Vertical" />
+                                </dxn:NavBarControl.View>
+                                <dxn:NavBarControl.Groups>
+                                    <dxn:NavBarGroup DisplaySource="Content"
+                                                     Header="Mail"
+                                                     dx1:ThemeManager.ThemeName="Office2013">
+                                        <dxn:NavBarGroup.Content>
+                                            <Button Width="500"
+                                                    Height="201"
+                                                    Content="First item." />
+                                        </dxn:NavBarGroup.Content>
+                                    </dxn:NavBarGroup>
+                                    <dxn:NavBarGroup DisplaySource="Content"
+                                                     Header="Calendar"
+                                                     dx1:ThemeManager.ThemeName="Office2013">
+                                        <dxn:NavBarGroup.Content>
+                                            <TextBox Width="600"
+                                                     Height="200"
+                                                     Text="Group content text" />
+                                        </dxn:NavBarGroup.Content>
+                                    </dxn:NavBarGroup>
+
+                                    <dxn:NavBarGroup DisplaySource="Content"
+                                                     Header="Calendar"
+                                                     dx1:ThemeManager.ThemeName="Office2013">
+                                        <dxn:NavBarGroup.Content>
+                                            <TextBox Width="600"
+                                                     Height="200"
+                                                     Text="Group content text" />
+                                        </dxn:NavBarGroup.Content>
+                                    </dxn:NavBarGroup>
+
+                                </dxn:NavBarControl.Groups>
+                            </dxn:NavBarControl>
                         </docking:ToolWindow>
                         <docking:ToolWindow Title="Properties" />
                     </docking:ToolWindowContainer>

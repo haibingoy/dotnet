@@ -1,0 +1,26 @@
+﻿<Window x:Class="CalculatorCustomer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow"
+        Width="525"
+        Height="350">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBox x:Name="arg1"
+                     Width="150"
+                     Margin="12" />
+            <TextBox x:Name="arg2"
+                     Width="150"
+                     Margin="12" />
+            <TextBox x:Name="result"
+                     Width="150"
+                     Margin="12" />
+        </StackPanel>
+        <Button Width="75"
+                Margin="329,197,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="Button_Click"
+                Content="Get Answer" />
+    </Grid>
+</Window>

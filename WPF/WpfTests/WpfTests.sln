@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusyCursor", "Cursor\BusyCu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusyCursorTest", "BusyCursorTest\BusyCursorTest.csproj", "{263B7A9E-6622-4CE6-A07F-7BDEF1B464AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorCustomer", "CalculatorCustomer\CalculatorCustomer.csproj", "{0D866686-994F-4248-B823-F8C35FE3831C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{8AFB64AF-F06A-42BD-A96F-A295FD78FFD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,14 @@ Global
 		{263B7A9E-6622-4CE6-A07F-7BDEF1B464AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{263B7A9E-6622-4CE6-A07F-7BDEF1B464AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{263B7A9E-6622-4CE6-A07F-7BDEF1B464AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D866686-994F-4248-B823-F8C35FE3831C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D866686-994F-4248-B823-F8C35FE3831C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D866686-994F-4248-B823-F8C35FE3831C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D866686-994F-4248-B823-F8C35FE3831C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AFB64AF-F06A-42BD-A96F-A295FD78FFD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFB64AF-F06A-42BD-A96F-A295FD78FFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFB64AF-F06A-42BD-A96F-A295FD78FFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFB64AF-F06A-42BD-A96F-A295FD78FFD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

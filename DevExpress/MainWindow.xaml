@@ -7,13 +7,15 @@
         Name="win"
         Title="MainWindow"
         Width="525"
-        Height="350" ContextMenuOpening="MainWindow_OnContextMenuOpening"
+        Height="350"
+        ContextMenuOpening="MainWindow_OnContextMenuOpening"
         dx:ThemeManager.ThemeName="Office2013">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <dxg:GridControl x:Name="grid" Grid.Row="0"
+        <dxg:GridControl x:Name="grid"
+                         Grid.Row="0"
                          AutoPopulateColumns="True"
                          ItemsSource="{Binding Persons}"
                          StartGrouping="Grid_OnStartGrouping">
@@ -25,10 +27,10 @@
                 </ResourceDictionary>
             </dxg:GridControl.Resources>
             <dxg:GridControl.Columns>
-                <dxg:GridColumn FilterPopupMode="CheckedList" FieldName="Id" />
-                <dxg:GridColumn FilterPopupMode="CheckedList" FieldName="Name" />
-                <dxg:GridColumn FilterPopupMode="CheckedList" FieldName="Bool" />
-                <dxg:GridColumn FilterPopupMode="CheckedList" FieldName="Profession" />
+                <dxg:GridColumn FieldName="Id" FilterPopupMode="CheckedList" />
+                <dxg:GridColumn FieldName="Name" FilterPopupMode="CheckedList" />
+                <dxg:GridColumn FieldName="Bool" FilterPopupMode="CheckedList" />
+                <dxg:GridColumn FieldName="Profession" FilterPopupMode="CheckedList" />
                 <dxg:GridColumn FieldName="Head" />
                 <dxg:GridColumn FieldName="Border" />
                 <dxg:GridColumn FieldName="DeviceName" />
@@ -45,7 +47,7 @@
                 <dxg:TableView Name="view" ShowTotalSummary="True">
                     <dxg:TableView.ContextMenu>
                         <ContextMenu>
-                            <MenuItem Header="_Test"></MenuItem>
+                            <MenuItem Header="_Test" />
                         </ContextMenu>
                     </dxg:TableView.ContextMenu>
                 </dxg:TableView>
