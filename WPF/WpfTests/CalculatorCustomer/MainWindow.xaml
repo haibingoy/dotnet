@@ -8,10 +8,12 @@
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBox x:Name="arg1"
                      Width="150"
-                     Margin="12" />
+                     Margin="12"
+                     Text="1" />
             <TextBox x:Name="arg2"
                      Width="150"
-                     Margin="12" />
+                     Margin="12"
+                     Text="2" />
             <TextBox x:Name="result"
                      Width="150"
                      Margin="12" />
