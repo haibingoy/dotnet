@@ -10,13 +10,23 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Button Grid.Row="0"
+      
+        <!--
+            <WindowsFormsHost x:Name="WindowsFormsHost"
+            Grid.Row="1"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch" />
+        -->
+        <PasswordBox x:Name="password" Grid.Row="0"
+                     Width="100"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     TabIndex="1"/>
+
+        <Button Grid.Row="2"
                 Click="button_Click"
                 Content="Wpf here" />
-        <WindowsFormsHost x:Name="WindowsFormsHost"
-                          Grid.Row="1"
-                          HorizontalAlignment="Stretch"
-                          VerticalAlignment="Stretch" />
     </Grid>
 </Window>
