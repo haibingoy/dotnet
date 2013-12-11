@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 
 namespace DXGridSample
 {
@@ -20,7 +21,7 @@ namespace DXGridSample
   
         public bool Bool { get; set; }
 
-        public string Profession { get; set; }
+        public Profession Profession { get; set; }
 
         public string DeviceName { get; set; }
 
@@ -45,6 +46,31 @@ namespace DXGridSample
         public Person Copy()
         {
             return new Person() { Id = this.Id, Bool = this.Bool, Name = this.Name, Profession = this.Profession };
+        }
+    }
+
+    public class Profession : IComparable
+    {
+        public int age { get; set; }
+
+        public string Occupation { get; set; }
+
+        public override string ToString()
+        {
+            return Occupation;
+        }
+
+        public int CompareTo(object obj)
+        {
+            var target = obj as Profession;
+            if (target == null)
+            {
+                return -1;
+            }
+            else
+            {
+                return Occupation.CompareTo(target.Occupation);
+            }
         }
     }
 }

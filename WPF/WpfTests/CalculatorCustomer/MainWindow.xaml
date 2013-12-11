@@ -24,5 +24,8 @@
                 VerticalAlignment="Top"
                 Click="Button_Click"
                 Content="Get Answer" />
+        <Button Content="ResetValue" Width="100" Height="30" Click="ButtonBase_OnClick" Margin="72,243,345,47"></Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="256,251,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="405,251,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
     </Grid>
 </Window>

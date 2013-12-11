@@ -36,127 +36,123 @@
   <ItemGroup>
     <Reference Include="ActiproSoftware.DataGrid.Contrib.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Actipro\ActiproSoftware.DataGrid.Contrib.Wpf.dll</HintPath>
+      <HintPath>Actipro\ActiproSoftware.DataGrid.Contrib.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="ActiproSoftware.Docking.Interop.Prism.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Actipro\ActiproSoftware.Docking.Interop.Prism.Wpf.dll</HintPath>
+      <HintPath>Actipro\ActiproSoftware.Docking.Interop.Prism.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="ActiproSoftware.Docking.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Actipro\ActiproSoftware.Docking.Wpf.dll</HintPath>
+      <HintPath>Actipro\ActiproSoftware.Docking.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="ActiproSoftware.Editors.Interop.DataGrid.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Actipro\ActiproSoftware.Editors.Interop.DataGrid.Wpf.dll</HintPath>
+      <HintPath>Actipro\ActiproSoftware.Editors.Interop.DataGrid.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="ActiproSoftware.Editors.Interop.PropertyGrid.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Actipro\ActiproSoftware.Editors.Interop.PropertyGrid.Wpf.dll</HintPath>
+      <HintPath>Actipro\ActiproSoftware.Editors.Interop.PropertyGrid.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="ActiproSoftware.Editors.Interop.Ribbon.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Actipro\ActiproSoftware.Editors.Interop.Ribbon.Wpf.dll</HintPath>
+      <HintPath>Actipro\ActiproSoftware.Editors.Interop.Ribbon.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="ActiproSoftware.Editors.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Actipro\ActiproSoftware.Editors.Wpf.dll</HintPath>
+      <HintPath>Actipro\ActiproSoftware.Editors.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="ActiproSoftware.Legacy.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Actipro\ActiproSoftware.Legacy.Wpf.dll</HintPath>
+      <HintPath>Actipro\ActiproSoftware.Legacy.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="ActiproSoftware.Navigation.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Actipro\ActiproSoftware.Navigation.Wpf.dll</HintPath>
+      <HintPath>Actipro\ActiproSoftware.Navigation.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="ActiproSoftware.Ribbon.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Actipro\ActiproSoftware.Ribbon.Wpf.dll</HintPath>
+      <HintPath>Actipro\ActiproSoftware.Ribbon.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="ActiproSoftware.Shared.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Actipro\ActiproSoftware.Shared.Wpf.dll</HintPath>
+      <HintPath>Actipro\ActiproSoftware.Shared.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="ActiproSoftware.Themes.Metro.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Actipro\ActiproSoftware.Themes.Metro.Wpf.dll</HintPath>
+      <HintPath>Actipro\ActiproSoftware.Themes.Metro.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="ActiproSoftware.Themes.Office.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Actipro\ActiproSoftware.Themes.Office.Wpf.dll</HintPath>
+      <HintPath>Actipro\ActiproSoftware.Themes.Office.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="ActiproSoftware.Wizard.Wpf, Version=13.1.581.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Actipro\ActiproSoftware.Wizard.Wpf.dll</HintPath>
+      <HintPath>Actipro\ActiproSoftware.Wizard.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Data.v13.1.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.Data.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Printing.v13.1.Core.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.Printing.v13.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Utils.v13.1.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.Utils.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v13.1.UI, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Utils.v13.1.UI.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.Utils.v13.1.UI.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Core.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Xpf.Core.v13.1.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.Xpf.Core.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Core.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Xpf.Core.v13.1.Extensions.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.Xpf.Core.v13.1.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Grid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Xpf.Grid.v13.1.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.Xpf.Grid.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Grid.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Xpf.Grid.v13.1.Core.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.Xpf.Grid.v13.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Grid.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Xpf.Grid.v13.1.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Xpf.Layout.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Xpf.Layout.v13.1.Core.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.Xpf.Grid.v13.1.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Mvvm.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Xpf.Mvvm.v13.1.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.Xpf.Mvvm.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.NavBar.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Xpf.NavBar.v13.1.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.Xpf.NavBar.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Printing.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Xpf.Printing.v13.1.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.Xpf.Printing.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Themes.MetropolisDark.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Xpf.Themes.MetropolisDark.v13.1.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.Xpf.Themes.MetropolisDark.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Themes.MetropolisLight.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Xpf.Themes.MetropolisLight.v13.1.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.Xpf.Themes.MetropolisLight.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Themes.Office2013.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.Xpf.Themes.Office2013.v13.1.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.Xpf.Themes.Office2013.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DevExpress\Dependencies\DevExpress.XtraEditors.v13.1.dll</HintPath>
+      <HintPath>DevExpress\DevExpress.XtraEditors.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -171,6 +167,12 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WPFLocalizeExtension">
+      <HintPath>..\packages\WpfLocalizeExtension.2.1.4\lib\net35\WPFLocalizeExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="XAMLMarkupExtensions">
+      <HintPath>..\packages\XAMLMarkupExtensions.1.1.6.3\lib\net40\XAMLMarkupExtensions.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -191,6 +193,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Person.cs" />
+    <Compile Include="PersonDataProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -208,6 +212,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -216,6 +221,218 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="zh-CN\DevExpress.Charts.Designer.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Dashboard.v13.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Dashboard.v13.1.Web.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Dashboard.v13.1.Win.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Data.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.DataAccess.v13.1.UI.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.PivotChart.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.Reports.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.Scheduler.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.Scheduler.Web.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.Security.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.Validation.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.Web.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.Win.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Office.v13.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Pdf.v13.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.PivotGrid.v13.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Printing.v13.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.RichEdit.v13.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Snap.v13.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Snap.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Spreadsheet.v13.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Utils.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Utils.v13.1.UI.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Web.ASPxHtmlEditor.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Web.ASPxScheduler.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Web.ASPxSpellChecker.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Web.ASPxTreeList.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Web.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Charts.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Core.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Docking.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Gauges.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Grid.v13.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.LayoutControl.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.NavBar.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Printing.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.PropertyGrid.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.ReportDesigner.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Ribbon.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.RichEdit.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Scheduler.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpo.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraBars.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraCharts.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraCharts.v13.1.Wizard.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraEditors.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraGauges.v13.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraGauges.v13.1.Presets.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraGrid.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraLayout.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraNavBar.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraPdfViewer.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraPivotGrid.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraPrinting.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraReports.v13.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraReports.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraRichEdit.v13.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraRichEdit.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraScheduler.v13.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraScheduler.v13.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraScheduler.v13.1.Reporting.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraScheduler.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraSpellChecker.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraSpreadsheet.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraTreeList.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraVerticalGrid.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraWizard.v13.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

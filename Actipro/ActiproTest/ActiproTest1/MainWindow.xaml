@@ -3,13 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="clr-namespace:ActiproSoftware.Windows.Controls.Ribbon.Controls;assembly=ActiproSoftware.Ribbon.Wpf"
         xmlns:docking="clr-namespace:ActiproSoftware.Windows.Controls.Docking;assembly=ActiproSoftware.Docking.Wpf"
-        xmlns:dx="clr-namespace:ActiproSoftware.Windows.Themes;assembly=ActiproSoftware.Shared.Wpf"
-        xmlns:dx1="clr-namespace:DevExpress.Xpf.Core;assembly=DevExpress.Xpf.Core.v13.1"
-        xmlns:dxn="clr-namespace:DevExpress.Xpf.NavBar;assembly=DevExpress.Xpf.NavBar.v13.1"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxg="clr-namespace:DevExpress.Xpf.Grid;assembly=DevExpress.Xpf.Grid.v13.1"
         xmlns:ribbon="clr-namespace:ActiproSoftware.Windows.Controls.Ribbon;assembly=ActiproSoftware.Ribbon.Wpf"
         Title="MainWindow"
         Width="525"
-        Height="350">
+        Height="350"
+        dx:ThemeManager.ThemeName="Office2013">
     <Grid>
         <DockPanel Grid.Row="1">
             <!--  Ribbon Control  -->
@@ -51,46 +51,41 @@
                     <docking:Workspace>
                         <docking:TabbedMdiHost x:Name="tabbedMdiHost">
                             <docking:TabbedMdiContainer>
-                                <docking:DocumentWindow Title="WelcomeDocument.rtf"
-                                                        Description="Rich-text document"
-                                                        FileName="C:\Users\Actipro\My Documents\WelcomeDocument.rtf"
-                                                        IsReadOnly="True">
-                                    <RichTextBox BorderThickness="0" IsReadOnly="True">
-                                        <RichTextBox.Document>
-                                            <FlowDocument>
-                                                <Paragraph>
-                                                    <Span FontSize="22" FontWeight="Bold">RibbonWindow with Docking Demo</Span>
-                                                    <LineBreak />
-                                                    <LineBreak />
-                                                    Use our
-                                                    <Bold>Actipro Docking &amp; MDI</Bold>
-                                                    product and our
-                                                    <Bold>Actipro Ribbon</Bold>
-                                                    product
-                                                    together to create Office-like applications that have both a ribbon user interface and docking capabilities.
-                                                </Paragraph>
-
-                                                <Paragraph>Office Themes</Paragraph>
-                                                <Paragraph>
-                                                    Change the current Office theme by changing to the
-                                                    <Bold>Themes</Bold>
-                                                    tab in the Ribbon and selecting an alternate Office theme.
-                                                </Paragraph>
-                                            </FlowDocument>
-                                        </RichTextBox.Document>
-                                    </RichTextBox>
-                                </docking:DocumentWindow>
-                                <docking:DocumentWindow Title="Document2.rtf"
-                                                        Description="Rich-text document"
-                                                        FileName="C:\Users\Actipro\My Documents\Document2.rtf"
-                                                        IsReadOnly="True">
-                                    <RichTextBox BorderThickness="0" IsReadOnly="True">
-                                        <RichTextBox.Document>
-                                            <FlowDocument>
-                                                <Paragraph>This document is read-only.</Paragraph>
-                                            </FlowDocument>
-                                        </RichTextBox.Document>
-                                    </RichTextBox>
+                                <docking:DocumentWindow>
+                                    <dxg:GridControl x:Name="grid"
+                                                     AutoPopulateColumns="True"
+                                                     ItemsSource="{Binding People}">
+                                        <dxg:GridControl.Columns>
+                                            <dxg:GridColumn FieldName="Id" FilterPopupMode="CheckedList" />
+                                            <dxg:GridColumn FieldName="Name" FilterPopupMode="CheckedList" />
+                                            <dxg:GridColumn FieldName="Bool" FilterPopupMode="CheckedList" />
+                                            <dxg:GridColumn FieldName="Profession" FilterPopupMode="CheckedList" />
+                                            <dxg:GridColumn FieldName="Head" />
+                                            <dxg:GridColumn FieldName="Border" />
+                                            <dxg:GridColumn FieldName="DeviceName" />
+                                            <dxg:GridColumn FieldName="DeviceVersion" />
+                                            <dxg:GridColumn FieldName="DtmDate" />
+                                            <dxg:GridColumn FieldName="DtmName" />
+                                            <dxg:GridColumn FieldName="DeviceVendor" />
+                                            <dxg:GridColumn FieldName="DtmVersion" />
+                                            <dxg:GridColumn FieldName="FdtVersion" />
+                                            <dxg:GridColumn FieldName="Group" />
+                                            <dxg:GridColumn FieldName="Protocol" />
+                                        </dxg:GridControl.Columns>
+                                        <dxg:GridControl.View>
+                                            <dxg:TableView Name="view" ShowTotalSummary="True">
+                                                <dxg:TableView.ContextMenu>
+                                                    <ContextMenu>
+                                                        <MenuItem Header="_Test" />
+                                                    </ContextMenu>
+                                                </dxg:TableView.ContextMenu>
+                                            </dxg:TableView>
+                                        </dxg:GridControl.View>
+                                        <dxg:GridControl.TotalSummary>
+                                            <dxg:GridSummaryItem FieldName="Name" SummaryType="Count" />
+                                            <dxg:GridSummaryItem FieldName="Bool" SummaryType="Count" />
+                                        </dxg:GridControl.TotalSummary>
+                                    </dxg:GridControl>
                                 </docking:DocumentWindow>
                             </docking:TabbedMdiContainer>
                         </docking:TabbedMdiHost>
@@ -98,42 +93,7 @@
 
                     <docking:ToolWindowContainer>
                         <docking:ToolWindow Title="NavBarControl">
-                            <dxn:NavBarControl Name="navBar" dx1:ThemeManager.ThemeName="MetropolisLight">
-                                <dxn:NavBarControl.View>
-                                    <dxn:ExplorerBarView Orientation="Vertical" />
-                                </dxn:NavBarControl.View>
-                                <dxn:NavBarControl.Groups>
-                                    <dxn:NavBarGroup DisplaySource="Content"
-                                                     Header="Mail"
-                                                     dx1:ThemeManager.ThemeName="Office2013">
-                                        <dxn:NavBarGroup.Content>
-                                            <Button Width="500"
-                                                    Height="201"
-                                                    Content="First item." />
-                                        </dxn:NavBarGroup.Content>
-                                    </dxn:NavBarGroup>
-                                    <dxn:NavBarGroup DisplaySource="Content"
-                                                     Header="Calendar"
-                                                     dx1:ThemeManager.ThemeName="Office2013">
-                                        <dxn:NavBarGroup.Content>
-                                            <TextBox Width="600"
-                                                     Height="200"
-                                                     Text="Group content text" />
-                                        </dxn:NavBarGroup.Content>
-                                    </dxn:NavBarGroup>
-
-                                    <dxn:NavBarGroup DisplaySource="Content"
-                                                     Header="Calendar"
-                                                     dx1:ThemeManager.ThemeName="Office2013">
-                                        <dxn:NavBarGroup.Content>
-                                            <TextBox Width="600"
-                                                     Height="200"
-                                                     Text="Group content text" />
-                                        </dxn:NavBarGroup.Content>
-                                    </dxn:NavBarGroup>
-
-                                </dxn:NavBarControl.Groups>
-                            </dxn:NavBarControl>
+                            <Button Content="NavBarWas hear" />
                         </docking:ToolWindow>
                         <docking:ToolWindow Title="Properties" />
                     </docking:ToolWindowContainer>

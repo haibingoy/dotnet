@@ -17,6 +17,14 @@ namespace ActiproTest1
 
             ThemeManager.CurrentTheme = ThemeName.MetroWhite.ToString();
             ThemeManager.AreNativeThemesEnabled = true;
+            Loaded += MainWindow_Loaded;
+        }
+
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            PersonDataProvider personDataProvider = new PersonDataProvider();
+            personDataProvider.PrepareData();
+            DataContext = personDataProvider;
         }
     }
 }

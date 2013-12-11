@@ -14,6 +14,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusyCursorTest", "BusyCursorTest\BusyCursorTest.csproj", "{263B7A9E-6622-4CE6-A07F-7BDEF1B464AC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorCustomer", "CalculatorCustomer\CalculatorCustomer.csproj", "{0D866686-994F-4248-B823-F8C35FE3831C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8AFB64AF-F06A-42BD-A96F-A295FD78FFD9} = {8AFB64AF-F06A-42BD-A96F-A295FD78FFD9}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{8AFB64AF-F06A-42BD-A96F-A295FD78FFD9}"
 EndProject

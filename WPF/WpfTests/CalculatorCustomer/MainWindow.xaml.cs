@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Calculator;
 
 namespace CalculatorCustomer
 {
@@ -36,7 +39,24 @@ namespace CalculatorCustomer
             else
             {
                 result.Text = "Parameter error.";
+                Log4NetService.Instance.LogError(this, "Parameter error.");
             }
+        }
+
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        {
+            MySettings.Default.Reset();
+            MySettings.Default.Save();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MySettings.Default.TestString = "new value";
+            MySettings.Default.Save();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
         }
     }
 }

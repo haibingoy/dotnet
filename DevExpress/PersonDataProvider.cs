@@ -56,11 +56,11 @@ namespace DXGridSample
 
                 if (i % 2 == 0)
                 {
-                    People[i].Profession = "IT, Teacher";
+                    People[i].Profession = new Profession {age = 32, Occupation = "IT, Teacher"};
                 }
                 else
                 {
-                    People[i].Profession = "Teacher";
+                    People[i].Profession = new Profession { age = 58, Occupation = "Teacher" };
                 }
             }
 
