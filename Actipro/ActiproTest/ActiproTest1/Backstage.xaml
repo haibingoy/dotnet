@@ -1,0 +1,24 @@
+﻿<ribbon:Backstage x:Class="ActiproTest1.Backstage"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:ribbon="clr-namespace:ActiproSoftware.Windows.Controls.Ribbon.Controls;assembly=ActiproSoftware.Ribbon.Wpf"
+                  Margin="0 -9 0 0"
+                  HorizontalAlignment="Stretch"
+                  VerticalAlignment="Stretch"
+                  BorderThickness="0"
+                   Style="{DynamicResource BackstageResourceKey}"
+                  Padding="0 0 0 0">
+    <!--  Backstage Tab Info  -->
+    <ribbon:BackstageTab Name="Info" Header="Info" />
+
+    <!--  Backstage Tab New  -->
+    <ribbon:BackstageTab Name="New" Header="New" />
+
+    <!--  Backstage Tab Open  -->
+    <ribbon:BackstageTab Name="Open" Header="Open" >
+        <Button Click="ButtonBase_OnClick" Content="open a project" Height="50" Width="150"></Button>
+    </ribbon:BackstageTab>
+    
+</ribbon:Backstage>

@@ -1,8 +1,94 @@
 ﻿<Application x:Class="ActiproTest1.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:ribbonUI="clr-namespace:ActiproSoftware.Windows.Controls.Ribbon.UI;assembly=ActiproSoftware.Ribbon.Wpf"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml" Startup="App_OnStartup">
     <Application.Resources>
-         
+        <Style x:Key="BackstageResourceKey" TargetType="TabControl">
+            <Setter Property="Background" Value="Green" />
+            <Setter Property="BorderBrush" Value="Gray" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Focusable" Value="True" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="TabStripPlacement" Value="Left" />
+            <Setter Property="ScrollViewer.CanContentScroll" Value="True" />
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto" />
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
+            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                    <ItemsPanelTemplate>
+                        <StackPanel IsItemsHost="true" />
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <!--  11/12/2010 - Enhanced support for scrolling backstage content to better match MS requirements.  -->
+                    <ControlTemplate TargetType="TabControl">
+
+                        <!--  Apply TemplateBinding Background as a secondary level so that watermarks can be specified in it  -->
+                        <Border Background="#FFFFFF"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            FocusVisualStyle="{x:Null}"
+                            KeyboardNavigation.TabNavigation="Cycle"
+                            SnapsToDevicePixels="true">
+                            <Border Background="{TemplateBinding Background}">
+                                <Grid>
+                                    <ScrollViewer FocusVisualStyle="{x:Null}"
+                                              HorizontalScrollBarVisibility="Disabled">
+                                        <!--  <ribbonControlsPrimitives:PopupContentDecorator>  -->
+                                        <DockPanel>
+
+                                            <Border Width="{x:Static ribbonUI:RibbonMeasurements.BackstageTabWidth}"
+                                                Background="Yellow"
+                                                DockPanel.Dock="Left"
+                                                Padding="0 80 0 0">
+                                                <StackPanel Orientation="Vertical">
+
+
+                                                    <Grid>
+                                                        <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                                                            <Rectangle Width="4" Fill="Yellow" />
+                                                            <Rectangle Width="1" Fill="Yellow" />
+                                                        </StackPanel>
+
+                                                        <ItemsPresenter Margin="0,20,0,5" Panel.ZIndex="1" />
+                                                    </Grid>
+                                                </StackPanel>
+                                            </Border>
+
+                                            <Border KeyboardNavigation.DirectionalNavigation="Contained"
+                                                KeyboardNavigation.TabNavigation="Local"
+                                                Padding="0 10 0 0">
+
+                                                <StackPanel Orientation="Vertical">
+
+                                                    <ContentPresenter x:Name="PART_SelectedContentHost"
+                                                                  Margin="{TemplateBinding Padding}"
+                                                                  ContentSource="SelectedContent"
+                                                                  FocusVisualStyle="{x:Null}"
+                                                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                                                </StackPanel>
+
+                                            </Border>
+
+                                        </DockPanel>
+                                        <!--  </ribbonControlsPrimitives:PopupContentDecorator>  -->
+                                    </ScrollViewer>
+                                    <ContentControl Margin="0 10 0 0"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Top"
+                                                FocusVisualStyle="{x:Null}"
+                                                Style="{DynamicResource CustomBackstageCloseButtonStyle}" />
+                                </Grid>
+                            </Border>
+                        </Border>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
 </Application>

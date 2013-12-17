@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="ActiproTest1.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="clr-namespace:ActiproSoftware.Windows.Controls.Ribbon.Controls;assembly=ActiproSoftware.Ribbon.Wpf"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:docking="clr-namespace:ActiproSoftware.Windows.Controls.Docking;assembly=ActiproSoftware.Docking.Wpf"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ribbon="clr-namespace:ActiproSoftware.Windows.Controls.Ribbon;assembly=ActiproSoftware.Ribbon.Wpf"
+             xmlns:local="clr-namespace:ActiproTest1"
+             d:DesignHeight="300"
+             d:DesignWidth="300"
+             mc:Ignorable="d">
+    <Grid>
+        <DockPanel Grid.Row="1">
+            <!--  Ribbon Control  -->
+            <ribbon:Ribbon x:Name="ribbon" DockPanel.Dock="Top">
+                <ribbon:Ribbon.QuickAccessToolBarItems>
+                    <controls:Button Label="Save" />
+                    <controls:Button Label="Undo" />
+                    <controls:Button Label="Redo" />
+                </ribbon:Ribbon.QuickAccessToolBarItems>
+                <ribbon:Ribbon.ApplicationMenu>
+                    <local:Backstage/>
+                </ribbon:Ribbon.ApplicationMenu>
+                <ribbon:Ribbon.Tabs>
+                    <controls:Tab KeyTipAccessText="P" Label="Page Layout" />
+                    <controls:Tab KeyTipAccessText="S" Label="References" />
+                    <controls:Tab KeyTipAccessText="M" Label="Mailings" />
+                    <controls:Tab KeyTipAccessText="R" Label="Review" />
+                    <controls:Tab KeyTipAccessText="W" Label="View" />
+                    <controls:Tab KeyTipAccessText="T" Label="Themes">
+                        <controls:Group Label="Theme Options">
+                            <controls:Button KeyTipAccessText="K" Label="Black Theme" />
+                        </controls:Group>
+                    </controls:Tab>
+                </ribbon:Ribbon.Tabs>
+            </ribbon:Ribbon>
+
+            <!--  DockSite  -->
+            <docking:DockSite x:Name="dockSite">
+                <docking:DockSite.AutoHideLeftContainers>
+                    <docking:ToolWindowContainer>
+                        <docking:ToolWindow Title="Toolbox" />
+                    </docking:ToolWindowContainer>
+                </docking:DockSite.AutoHideLeftContainers>
+                <docking:SplitContainer>
+
+                    <!--  Workspace  -->
+                    <docking:Workspace>
+                        <docking:TabbedMdiHost x:Name="tabbedMdiHost">
+                            <docking:TabbedMdiContainer>
+                                <docking:DocumentWindow>
+                                    <TextBlock Text="document window" />
+                                </docking:DocumentWindow>
+                            </docking:TabbedMdiContainer>
+                        </docking:TabbedMdiHost>
+                    </docking:Workspace>
+
+                    <docking:ToolWindowContainer>
+                        <docking:ToolWindow Title="NavBarControl">
+                            <Button Content="NavBarWas hear" />
+                        </docking:ToolWindow>
+                        <docking:ToolWindow Title="Properties" />
+                    </docking:ToolWindowContainer>
+                </docking:SplitContainer>
+            </docking:DockSite>
+
+        </DockPanel>
+    </Grid>
+</UserControl>

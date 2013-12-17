@@ -1,105 +1,13 @@
-﻿<Window x:Class="ActiproTest1.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:controls="clr-namespace:ActiproSoftware.Windows.Controls.Ribbon.Controls;assembly=ActiproSoftware.Ribbon.Wpf"
-        xmlns:docking="clr-namespace:ActiproSoftware.Windows.Controls.Docking;assembly=ActiproSoftware.Docking.Wpf"
-        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
-        xmlns:dxg="clr-namespace:DevExpress.Xpf.Grid;assembly=DevExpress.Xpf.Grid.v13.1"
-        xmlns:ribbon="clr-namespace:ActiproSoftware.Windows.Controls.Ribbon;assembly=ActiproSoftware.Ribbon.Wpf"
-        Title="MainWindow"
-        Width="525"
-        Height="350"
-        dx:ThemeManager.ThemeName="Office2013">
+﻿<ribbon:RibbonWindow x:Class="ActiproTest1.MainWindow"
+                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+                     xmlns:ribbon="clr-namespace:ActiproSoftware.Windows.Controls.Ribbon;assembly=ActiproSoftware.Ribbon.Wpf"
+                     Title="MainWindow"
+                     Width="525"
+                     Height="350"
+                     WindowStyle="None">
     <Grid>
-        <DockPanel Grid.Row="1">
-            <!--  Ribbon Control  -->
-            <ribbon:Ribbon x:Name="ribbon" DockPanel.Dock="Top">
-                <!--
-                    Use pre-defined WordApplicationMenu, WordHomeTab, and WordInsertTab types in the sample project so that we don't have redundant code
-                    in this sample that takes away from the focus of the sample
-                -->
-
-                <ribbon:Ribbon.QuickAccessToolBarItems>
-                    <controls:Button Label="Save" />
-                    <controls:Button Label="Undo" />
-                    <controls:Button Label="Redo" />
-                </ribbon:Ribbon.QuickAccessToolBarItems>
-                <ribbon:Ribbon.Tabs>
-                    <controls:Tab KeyTipAccessText="P" Label="Page Layout" />
-                    <controls:Tab KeyTipAccessText="S" Label="References" />
-                    <controls:Tab KeyTipAccessText="M" Label="Mailings" />
-                    <controls:Tab KeyTipAccessText="R" Label="Review" />
-                    <controls:Tab KeyTipAccessText="W" Label="View" />
-                    <controls:Tab KeyTipAccessText="T" Label="Themes">
-                        <controls:Group Label="Theme Options">
-                            <controls:Button KeyTipAccessText="K" Label="Black Theme" />
-                        </controls:Group>
-                    </controls:Tab>
-                </ribbon:Ribbon.Tabs>
-            </ribbon:Ribbon>
-
-            <!--  DockSite  -->
-            <docking:DockSite x:Name="dockSite">
-                <docking:DockSite.AutoHideLeftContainers>
-                    <docking:ToolWindowContainer>
-                        <docking:ToolWindow Title="Toolbox" />
-                    </docking:ToolWindowContainer>
-                </docking:DockSite.AutoHideLeftContainers>
-                <docking:SplitContainer>
-
-                    <!--  Workspace  -->
-                    <docking:Workspace>
-                        <docking:TabbedMdiHost x:Name="tabbedMdiHost">
-                            <docking:TabbedMdiContainer>
-                                <docking:DocumentWindow>
-                                    <dxg:GridControl x:Name="grid"
-                                                     AutoPopulateColumns="True"
-                                                     ItemsSource="{Binding People}">
-                                        <dxg:GridControl.Columns>
-                                            <dxg:GridColumn FieldName="Id" FilterPopupMode="CheckedList" />
-                                            <dxg:GridColumn FieldName="Name" FilterPopupMode="CheckedList" />
-                                            <dxg:GridColumn FieldName="Bool" FilterPopupMode="CheckedList" />
-                                            <dxg:GridColumn FieldName="Profession" FilterPopupMode="CheckedList" />
-                                            <dxg:GridColumn FieldName="Head" />
-                                            <dxg:GridColumn FieldName="Border" />
-                                            <dxg:GridColumn FieldName="DeviceName" />
-                                            <dxg:GridColumn FieldName="DeviceVersion" />
-                                            <dxg:GridColumn FieldName="DtmDate" />
-                                            <dxg:GridColumn FieldName="DtmName" />
-                                            <dxg:GridColumn FieldName="DeviceVendor" />
-                                            <dxg:GridColumn FieldName="DtmVersion" />
-                                            <dxg:GridColumn FieldName="FdtVersion" />
-                                            <dxg:GridColumn FieldName="Group" />
-                                            <dxg:GridColumn FieldName="Protocol" />
-                                        </dxg:GridControl.Columns>
-                                        <dxg:GridControl.View>
-                                            <dxg:TableView Name="view" ShowTotalSummary="True">
-                                                <dxg:TableView.ContextMenu>
-                                                    <ContextMenu>
-                                                        <MenuItem Header="_Test" />
-                                                    </ContextMenu>
-                                                </dxg:TableView.ContextMenu>
-                                            </dxg:TableView>
-                                        </dxg:GridControl.View>
-                                        <dxg:GridControl.TotalSummary>
-                                            <dxg:GridSummaryItem FieldName="Name" SummaryType="Count" />
-                                            <dxg:GridSummaryItem FieldName="Bool" SummaryType="Count" />
-                                        </dxg:GridControl.TotalSummary>
-                                    </dxg:GridControl>
-                                </docking:DocumentWindow>
-                            </docking:TabbedMdiContainer>
-                        </docking:TabbedMdiHost>
-                    </docking:Workspace>
-
-                    <docking:ToolWindowContainer>
-                        <docking:ToolWindow Title="NavBarControl">
-                            <Button Content="NavBarWas hear" />
-                        </docking:ToolWindow>
-                        <docking:ToolWindow Title="Properties" />
-                    </docking:ToolWindowContainer>
-                </docking:SplitContainer>
-            </docking:DockSite>
-
-        </DockPanel>
+        <ContentControl x:Name="ContentControl" />
     </Grid>
-</Window>
+</ribbon:RibbonWindow>
