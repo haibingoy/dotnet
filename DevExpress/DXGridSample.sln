@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXGridSample", "DXGridSample.csproj", "{214A381C-03A1-47C1-B4F2-8D56659E171F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavBarControl", "..\NavBarControl\NavBarControl.csproj", "{9B2FF666-1719-4434-8BF8-E09EEA88012B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavBarControl", "NavBarControl\NavBarControl.csproj", "{9B2FF666-1719-4434-8BF8-E09EEA88012B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

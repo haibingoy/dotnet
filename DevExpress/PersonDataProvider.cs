@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Windows;
+using System.Windows.Forms;
+using System.Windows.Media.Imaging;
+using DXGridSample.Properties;
+using Application = System.Windows.Application;
 
 namespace DXGridSample
 {
@@ -34,25 +37,29 @@ namespace DXGridSample
         /// </summary>
         public void PrepareData()
         {
-            for (int i = 0; i < 400; i++)
+            for (int i = 0; i < 2000; i++)
             {
-                People.Add(new Person
-                {
-                    Id = i,
-                    Name = "Name" + i,
-                    Bool = i % 2 == 0,
-                    Head = Image.FromFile("fdtCONTAINER.ico"),
-                    Border = Image.FromFile("fdtCONTAINER.ico"),
-                    DeviceName = "DeviceNameDeviceName",
-                    DeviceVersion = "DeviceNameDeviceName",
-                    DtmDate = "DeviceNameDeviceName",
-                    DtmName = "DeviceNameDeviceName",
-                    DeviceVendor = "DeviceNameDeviceName",
-                    DtmVersion = "DeviceNameDeviceName",
-                    FdtVersion = "DeviceNameDeviceName",
-                    Group = "DeviceNameDeviceName",
-                    Protocol = "DeviceNameDeviceName"
-                });
+                var person = new Person
+                    {
+                        Id = i,
+                        Name = "Name" + i,
+                        Bool = i%2 == 0,
+                        Head = new BitmapImage(new Uri("pack://application:,,,/Error32.png", UriKind.RelativeOrAbsolute)),
+                        Border = new BitmapImage(new Uri("pack://application:,,,/fdtCONTAINER.ico", UriKind.RelativeOrAbsolute)),
+                        DeviceName = "DeviceNameDeviceName",
+                        DeviceVersion = "DeviceNameDeviceName",
+                        DtmDate = "DeviceNameDeviceName",
+                        DtmName = "DeviceNameDeviceName",
+                        DeviceVendor = "DeviceNameDeviceName",
+                        DtmVersion = "DeviceNameDeviceName",
+                        FdtVersion = "DeviceNameDeviceName",
+                        Group = "DeviceNameDeviceName",
+                        Protocol = "DeviceNameDeviceName"
+                    };
+
+                person.Head.Freeze();
+                person.Border.Freeze();
+                People.Add(person);
 
                 if (i % 2 == 0)
                 {

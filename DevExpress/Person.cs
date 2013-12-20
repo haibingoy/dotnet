@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Windows.Media;
 
 namespace DXGridSample
 {
@@ -13,9 +14,9 @@ namespace DXGridSample
         /// </summary>
         public int Id { get; set; }
 
-        public Image Head { get; set; }
+        public ImageSource Head { get; set; }
 
-        public Image Border { get; set; }
+        public ImageSource Border { get; set; }
 
         public string Name { get; set; }
   

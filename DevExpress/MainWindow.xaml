@@ -22,15 +22,24 @@
                     <ResourceDictionary.MergedDictionaries>
                         <ResourceDictionary Source="Dictionary.xaml" />
                     </ResourceDictionary.MergedDictionaries>
+                    <DataTemplate x:Key="IconColumnTemplate">
+                        <Grid x:Name="GridDtmNotFound">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="{Binding Value}" />
+                        </Grid>
+                    </DataTemplate>
                 </ResourceDictionary>
             </dxg:GridControl.Resources>
             <dxg:GridControl.Columns>
                 <dxg:GridColumn FieldName="Id" FilterPopupMode="CheckedList" />
                 <dxg:GridColumn FieldName="Name" FilterPopupMode="CheckedList" />
                 <dxg:GridColumn FieldName="Bool" FilterPopupMode="CheckedList" />
-                <dxg:GridColumn FieldName="Profession" FilterPopupMode="CheckedList" />
-                <dxg:GridColumn FieldName="Head" />
-                <dxg:GridColumn FieldName="Border" />
+                <dxg:GridColumn ColumnFilterMode="DisplayText"
+                                FieldName="Profession"
+                                FilterPopupMode="CheckedList" />
+                <dxg:GridColumn CellTemplate="{StaticResource IconColumnTemplate}" FieldName="Head" />
+                <dxg:GridColumn CellTemplate="{StaticResource IconColumnTemplate}" FieldName="Border" />
                 <dxg:GridColumn FieldName="DeviceName" />
                 <dxg:GridColumn FieldName="DeviceVersion" />
                 <dxg:GridColumn FieldName="DtmDate" />
@@ -42,7 +51,10 @@
                 <dxg:GridColumn FieldName="Protocol" />
             </dxg:GridControl.Columns>
             <dxg:GridControl.View>
-                <dxg:TableView Name="view" ShowTotalSummary="True">
+                <dxg:TableView Name="view"
+                               AllowHorizontalScrollingVirtualization="True"
+                               MultiSelectMode="Row"
+                               ShowTotalSummary="True">
                     <dxg:TableView.ContextMenu>
                         <ContextMenu>
                             <MenuItem Header="_Test" />
