@@ -1,0 +1,15 @@
+﻿<Window x:Class="LoveBees.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="350" Width="525">
+    <Grid Margin="0,0,103,78">
+        <Label Content="User:" HorizontalAlignment="Left" Margin="104,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="-23.6,-1.038"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="104,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-5.342,-1.192"/>
+        <ComboBox HorizontalAlignment="Left" Margin="182,71,0,0" VerticalAlignment="Top" Width="130"/>
+        <Button Content="OK" HorizontalAlignment="Left" Margin="182,163,0,0" VerticalAlignment="Top" Width="48"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="256,163,0,0" VerticalAlignment="Top" Width="56"/>
+        <Button x:Name="Regist" Content="New User Regist" Click="Regist_Click" HorizontalAlignment="Left" Margin="204,204,0,0" VerticalAlignment="Top" Width="108"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="182,115,0,0" VerticalAlignment="Top" Width="130"/>
+
+    </Grid>
+</Window>

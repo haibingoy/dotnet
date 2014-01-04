@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsHost", "WindowsFormsHost\WindowsFormsHost.csproj", "{B715E5D4-32B5-4F93-B895-23292C6943CA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication", "WindowsFormsApplication\WindowsFormsApplication.csproj", "{CDBF0DED-A2B8-4BC6-9E54-F7263E2B2493}"
@@ -19,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorCustomer", "Calcu
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{8AFB64AF-F06A-42BD-A96F-A295FD78FFD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoveBees", "LoveBees\LoveBees.csproj", "{BA0F73D2-1FC1-4AA8-8A94-DD5098BF0207}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +62,10 @@ Global
 		{8AFB64AF-F06A-42BD-A96F-A295FD78FFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AFB64AF-F06A-42BD-A96F-A295FD78FFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AFB64AF-F06A-42BD-A96F-A295FD78FFD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA0F73D2-1FC1-4AA8-8A94-DD5098BF0207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA0F73D2-1FC1-4AA8-8A94-DD5098BF0207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA0F73D2-1FC1-4AA8-8A94-DD5098BF0207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA0F73D2-1FC1-4AA8-8A94-DD5098BF0207}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
