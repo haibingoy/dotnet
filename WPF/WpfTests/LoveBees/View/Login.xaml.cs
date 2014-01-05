@@ -24,6 +24,13 @@ namespace LoveBees
         public Login()
         {
             InitializeComponent();
+            Loaded += Window_Loaded;
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            LoginViewModel viewModel = this.DataContext as LoginViewModel;
+            viewModel.PasswordBox = Password;
         }
     }
 }

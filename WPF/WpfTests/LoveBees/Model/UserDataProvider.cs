@@ -18,16 +18,24 @@ namespace LoveBees.Model
 
         private void PrepareData()
         {
+            XmlDocument doc = new XmlDocument();
             if (!File.Exists("UserData.xml"))
             {
                 return;
             }
 
-            using (XmlReader r = XmlReader.Create("UserData.xml"))
+            doc.Load("UserData.xml");
+            XmlNode node = doc.SelectSingleNode("Users");
+            foreach (XmlNode child in node.ChildNodes)
             {
-                while (r.Read())
+                if (child.Name.Equals("User"))
                 {
+                    var user = new User { 
+                        Name = child.Attributes["Name"].Value,
+                        PW = child.Attributes["Password"].Value
+                    };
 
+                    Users.Add(user);
                 }
             }
         }
@@ -45,6 +53,8 @@ namespace LoveBees.Model
                 return _Instance;
             }
         }
+
+        public User SelectedUser { get; set; }
 
         public List<User> Users { get; private set; }
 

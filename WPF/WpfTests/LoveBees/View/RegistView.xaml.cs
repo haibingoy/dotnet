@@ -1,4 +1,5 @@
 ﻿using LoveBees.Model;
+using LoveBees.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,33 +24,14 @@ namespace LoveBees.View
         public RegistView()
         {
             InitializeComponent();
+            Loaded += Window_Loaded;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void Ok_Click(object sender, RoutedEventArgs e)
-        {
-            if (string.IsNullOrEmpty(UserName.Text))
-            {
-                MessageBox.Show("User name is invalid.");
-                return;
-            }
-
-            if (string.IsNullOrEmpty(Password1.Password) || !Password1.Password.Equals(Password2.Password))
-            {
-                MessageBox.Show("Two passwords are not equal or you have not input any password!");
-            }
-
-            var user = new User()
-            {
-                Name = UserName.Text,
-                PW = Password2.Password
-            };
-
-            UserDataProvider.Instance.AddUser(user);
+            var registViewModel = this.DataContext as RegistViewModel;
+            registViewModel.PasswordBox1 = Password1;
+            registViewModel.PasswordBox2 = Password2;
         }
     }
 }
