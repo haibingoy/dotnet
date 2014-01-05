@@ -25,11 +25,5 @@ namespace LoveBees
         {
             InitializeComponent();
         }
-
-        private void Regist_Click(object sender, RoutedEventArgs e)
-        {
-            var registView = new RegistView();
-            registView.ShowDialog();
-        }
     }
 }

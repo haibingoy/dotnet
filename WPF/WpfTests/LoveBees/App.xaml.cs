@@ -1,4 +1,7 @@
-﻿using System;
+﻿using LoveBees.Model;
+using LoveBees.View;
+using LoveBees.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -15,8 +18,16 @@ namespace LoveBees
     {
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            Login login = new Login();
-            login.ShowDialog();
+            RegistAllViews();
+            LoginViewModel viewModel = new LoginViewModel();
+            DialogService.Instance.OpenView(viewModel);
+        }
+
+        private void RegistAllViews()
+        {
+            DialogService.Instance.RegistView(typeof(LoginViewModel), typeof(Login));
+            DialogService.Instance.RegistView(typeof(RegistViewModel), typeof(RegistView));
+            DialogService.Instance.RegistView(typeof(PWViewModel), typeof(PWView));
         }
     }
 }

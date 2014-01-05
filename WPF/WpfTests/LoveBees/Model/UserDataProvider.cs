@@ -25,10 +25,10 @@ namespace LoveBees.Model
 
             using (XmlReader r = XmlReader.Create("UserData.xml"))
             {
-                //while (r.Read())
-                //{ 
-                    
-                //}
+                while (r.Read())
+                {
+
+                }
             }
         }
 

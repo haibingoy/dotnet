@@ -8,7 +8,7 @@
         <ComboBox HorizontalAlignment="Left" Margin="182,71,0,0" VerticalAlignment="Top" Width="130"/>
         <Button Content="OK" HorizontalAlignment="Left" Margin="182,163,0,0" VerticalAlignment="Top" Width="48"/>
         <Button Content="Cancel" HorizontalAlignment="Left" Margin="256,163,0,0" VerticalAlignment="Top" Width="56"/>
-        <Button x:Name="Regist" Content="New User Regist" Click="Regist_Click" HorizontalAlignment="Left" Margin="204,204,0,0" VerticalAlignment="Top" Width="108"/>
+        <Button x:Name="Regist" Content="New User Regist" Command="{Binding RegistCommand}" HorizontalAlignment="Left" Margin="204,204,0,0" VerticalAlignment="Top" Width="108"/>
         <PasswordBox HorizontalAlignment="Left" Margin="182,115,0,0" VerticalAlignment="Top" Width="130"/>
 
     </Grid>
